@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  }
+
+
+main {
+  min-height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+.container {
+  width: 600px;
+  background-color:#F0F8FF;
+  padding:5px;
+  box-shadow:2px 2px #778899;
+}
+
+#quiz-title{
+  color:#6495ED;
+  font-weight:bold;
+  font-size:1.5em;
+  border-bottom-style:solid;
+  cursor:pointer;
+}
+
+#quiz {
+  min-height:300px;
+}
+
+#question {
+  padding:5px 10px;
+}
+
+#result {
+  min-height:80vh;
+}
+
+#quiz-error {
+  visibility:hidden;
+}
+
+#your-answer {
+  padding:10px;
+}
+
+#your-answer p{
+ margin:0.2em; 
+}
+
+
+#correct-answer-list {
+  padding:10px;
+}
+
+.quiz-result-title {
+  border-bottom-style:outset;
+  border-bottom-color:#6495ED;
+  padding-left:1em;
+  font-weight: bold;
+  color:#696969;
+}
+
+.row{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-left-align{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row-right-align{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.quiz-answer{
+  margin-left:2em;
+}
+.button{
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+  padding:0.5em;
+  background-color: #6495ED;
+  transition: .4s;
+  border-color:#6495ED;
+  border-style:solid;
+  margin:5px 2px;
+}
+
+.button:hover {
+  background-color:#DCDCDC;
+  border-color:#DCDCDC;
+}
+
+#progress{
+  width:80%;
+  text-align:center;
+  font-size:2em;
+  color:#B0C4DE;
+}
+
+@media screen and (max-width:600px){
+
+  main {
+    height:100vh;
+    display: flex;
+    justify-content: start;
+  }
+  
+  .container {
+    width: 100%;
+    padding:5px;
+    box-shadow:2px 2px #778899;
+  }
+
+
+}

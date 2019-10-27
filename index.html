@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<title>quiz</title>
+
+<body>
+
+
+
+<main>
+  <div class="container">
+    <div id="quiz-title"></div>
+    
+    <div id="exam">
+      <div id="quiz">
+          <div id="question">
+            <p id="q-no"></p>
+            <p id="q-text"></p>
+          </div>
+      
+          <div id="choices">
+          </div>
+        </div>
+      
+        <div id="quiz-footer">
+          <div class="row">
+            <p id="quiz-error">error</p>
+          </div>
+          <div class="row">
+              <a href="#" class="button" id="back-button">前へ</a>
+              <a href="#" class="button" id="next-button">次へ</a>
+          </div>
+          <div class="row">
+              <span id="progress"></span>
+          </div>
+        </div>  
+    </div>
+
+    <div id="result">
+      <p class="quiz-result-title">結果</p>
+      <div id="your-answer"></div>
+      
+      <p class="quiz-result-title">正解</p>
+      <div id="correct-answer-list"></div>
+
+      <div class="row">
+          <a href="#" class="button" id="quiz-retry">もう1回やる</a>
+        </div>
+    </div>
+
+
+  </div>
+
+</main>
+
+</body>
+
+<script type="text/javascript" src="cocoaQuiz.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>
